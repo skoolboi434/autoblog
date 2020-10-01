@@ -1,0 +1,167 @@
+// Varaiable
+
+$secondary: #3f4954;
+$third: #fff;
+$fourth: #333;
+$fifth: #104f55;
+
+$heading-font: "Roboto", sans-serif;
+$para-font: "Open Sans", sans-serif;
+
+$box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+$gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font !important;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    font-family: $para-font;
+    margin-bottom: 0;
+}
+
+a {
+    font-family: $para-font;
+    color: $secondary;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.text-gray {
+    color: $secondary;
+}
+
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-family: $heading-font;
+    cursor: pointer;
+}
+
+// Navigation Styles
+
+.navbar-custom {
+    background: $third;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    position: relative;
+    z-index: 999;
+    .navbar-brand {
+        font-family: $heading-font;
+        font-size: 1.6rem;
+        padding: 1rem 0;
+    }
+    .nav-link {
+        padding: 1.6rem 1rem;
+        font-size: 1.1rem;
+        position: relative;
+    }
+    .navbar-collapse {
+        background: $third;
+    }
+}
+
+// !Navigation Styles
+
+// Hero Styles
+
+.site-title {
+    background: url("../../public/images/Background-image.png");
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    .site-background {
+        padding-top: 10rem;
+        text-align: center;
+        color: $third;
+        h1,
+        h3 {
+            margin: 0.3rem;
+        }
+
+        .btn {
+            margin: 1.8rem;
+            background: $gradient;
+            &:hover {
+                background: transparent;
+                border: 1px solid $third;
+                color: $third;
+            }
+        }
+    }
+}
+
+// !Hero Styles
+
+//Feat Posts Styles
+
+.feat-posts,
+.blog-posts {
+    .post {
+        .post-content {
+            width: 100%;
+            margin-bottom: 5rem;
+            .post-image,
+            .post-title {
+                padding: 1rem 0;
+                position: relative;
+                a {
+                    font-size: 1.5rem;
+                }
+                .post-btn {
+                    border-radius: 0;
+                    padding: 0.7rem 1.5rem;
+                    background: $gradient;
+                }
+                .link-holder {
+                    display: block;
+                }
+            }
+            .post-image {
+                div {
+                    overflow: hidden;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .post-info {
+                background: $gradient;
+                padding: 1rem;
+                position: absolute;
+                bottom: 0;
+                left: 20vw;
+                span {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+// Dashboard Page Styles
+
+.card {
+    .card-body {
+        .btn-create {
+            background: $gradient;
+        }
+    }
+}
